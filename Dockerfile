@@ -4,7 +4,7 @@ ENV JAVA_HOME /usr/lib/jvm/default-jvm
 RUN apk add --no-cache openjdk7 && \
     ln -sf "${JAVA_HOME}/bin/"* "/usr/bin/"
 
-RUN apk add --no-cache git
+RUN apk add --no-cache git bash
 
 # Add user jenkins to the image
 RUN adduser -D jenkins
